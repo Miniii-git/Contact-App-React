@@ -1,0 +1,24 @@
+:root {
+  --MyDarkBlue: #011343;
+  --MyLightBlue: #2d7895;
+  --MyMaroon: #9b1f39;
+  --MyPink: #c978755e;
+  --MyWhite: #fcf8e8;
+  --UsersBackGround: rgba(45, 119, 149, 0.042);
+  --MyVeryLightBlue: rgba(45, 119, 149, 0.442);
+}
+
+body {
+  margin: auto;
+  max-width: 1000px;
+  min-height: 100vh;
+  font-family: Inter;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,62 @@
+.Header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.Header h1 {
+  display: inline;
+  font-size: 4rem;
+  font-weight: 700;
+  background-image: url("./assets/palitra.JPG"); /*linear-gradient(60deg, #342c2e, #f7ebd9);*/
+  background-clip: text;
+  color: transparent;
+}
+
+/*.Header span {
+  margin-left: 20px;
+  font-size: 20px;
+  color: var(--MyDarkBlue);
+  position: relative;
+  top: -7px;
+}*/
+#Mini {
+  margin-top: 10px;
+  color: black;
+  font-size: 17px;
+}
+
+#Mini a {
+  border-radius: 4px;
+  background-color: var(--MyPink);
+  padding: 1px 8px;
+  text-decoration: none;
+  color: black;
+}
+
+#Mini a:hover {
+  background-color: #e1a19e5e;
+}
+
+.iconContactApp {
+  font-size: 30px;
+  position: relative;
+  top: -10px;
+  color: var(--MyDarkBlue);
+}
+
+@media (max-width: 550px) {
+  .Header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  #Mini {
+    font-size: 15px;
+  }
+
+  .iconContactApp {
+    font-size: 25px;
+    top: -6px;
+  }
+}

@@ -1,0 +1,148 @@
+.InputInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*
+.InputInformation {
+  margin: auto;        ------>  باشه auto margin گفتیم که global.css داخل    
+  padding: 30px;
+  max-width: 1000px;   ------>  باشه max-width: 1000px گفتیم که global.css داخل  
+  height: 290px;       ------>  اصلا لازم نیست
+  text-align: center;  ------>  align-items: center;
+  border-radius: 10px; ------> باید بوردر و شادو داشته باشه نه این formSection 
+  box-shadow: 0px 0px 40px 5px rgba(210, 198, 190, 0.5);
+}*/
+
+.formSection {
+  display: flex; /* اینو میذاریم که المنت های اینپوت که چایلد های فورمسکشن هستن کنار هم بیند و بتونن رپ بشن */
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: var(--MyVeryLightBlue) 0px 5px 20px 0px;
+}
+
+.formSection input {
+  width: 45%;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid var(--MyLightBlue); /*border: 1px solid rgb(177, 167, 161);*/
+  border-radius: 10px;
+  color: var(--MyLightBlue);
+  font-size: 1rem;
+}
+
+.formSection button {
+  width: calc(90% + 20px);
+  height: 40px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-size: 1rem; /*font-weight: 600;*/
+  color: var(--MyWhite);
+  border: none;
+  transition: 0.2s all ease-in-out; /*transition must be written for button itself, not when hovering*/
+  background-color: var(--MyLightBlue);
+  /*background: linear-gradient(
+    112.1deg,
+    rgb(165, 156, 150) 11.4%,
+    rgb(210, 198, 190) 50.2%,
+    rgb(165, 156, 150) 95.4%
+  );*/
+}
+
+.formSection button:hover {
+  box-shadow: var(--MyLightBlue) 0px 3px 10px 0px;
+  /*background: linear-gradient(
+    112.1deg,
+    rgb(210, 198, 190) 11.4%,
+    rgb(165, 156, 150) 50.2%,
+    rgb(210, 198, 190) 95.4%
+  );*/
+}
+
+.formSection input:focus {
+  outline: 2px solid var(--bordersColor);
+}
+
+.alarmSection {
+  height: 40px;
+  width: 100%;
+  margin: 15px 0px 30px;
+}
+
+.alarmSection p {
+  background-color: var(--MyPink);
+  color: var(--MyMaroon);
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+/*
+.alarmSection p {
+  text-align: left;    ------->  اصلا لازم نیست
+  line-height: 2.5;    ------->  وقتی پدینگ 10 گذاشتیم از همه طرف 10 رو داریم  دیگه این لازم نیست
+  padding-left: 15px;  ------->  اینم لازم نیست
+} 
+*/
+
+.contactListSection {
+  width: 100%;
+}
+
+.contactListSection h3 {
+  display: inline;
+  font-size: 1.5rem; /*22px*/
+  font-weight: 600;
+  margin-left: 5px;
+  color: var(--MyDarkBlue);
+  border: 4px solid transparent;
+  border-image: url("./assets/palitra.JPG") 4 repeat;
+  padding: 5px;
+}
+
+.contactListSection .list {
+  border: 2px solid var(--MyVeryLightBlue);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.messageNoContact {
+  height: 68px;
+  line-height: 78px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--MyVeryLightBlue);
+}
+
+@media (max-width: 550px) {
+  .formSection input {
+    width: 90%;
+  }
+
+  .formSection button {
+    width: 90%;
+  } /*اینم دیگه کلک نمیخواد مثل بقیه اینپوتا میشه همون 90 درصد */
+
+  .contactListSection {
+    text-align: center;
+  }
+  .contactListSection h3 {
+    padding: 5px 30px;
+  }
+
+  .alarmSection {
+    height: 20px;
+    width: 100%;
+    margin: 5px 0px 40px;
+  }
+
+  .alarmSection p {
+    padding: 4px;
+    padding-left: 10px;
+  }
+}

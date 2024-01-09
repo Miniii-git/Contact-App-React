@@ -1,0 +1,56 @@
+.userInfo {
+  /*display: flex;
+  justify-content: space-between;
+  align-items: center;
+ flex-wrap: wrap;*/
+  background-color: var(--UsersBackGround);
+  color: black;
+  margin: 15px;
+  padding: 15px 20px 15px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr 30px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+#delete {
+  align-self: center;
+}
+
+.iconDelete {
+  font-size: 18px;
+}
+
+.iconDelete:hover {
+  transition: all 100ms ease-in-out;
+  color: var(--MyMaroon);
+  cursor: pointer;
+}
+
+#delete span {
+  background-color: white;
+  border-radius: 100%;
+  padding: 8px;
+}
+
+@media (max-width: 650px) {
+  .userInfo {
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: repeat(3, 1fr);
+    text-align: left;
+  }
+  #delete {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    text-align: center;
+  }
+
+  #delete span {
+    padding: 15px;
+  }
+}
